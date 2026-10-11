@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-cua"
+version = "1.0.0"
+description = "Sovereign Sub-Millisecond Native GUI Action Kernel & Computer-Use Hypervisor"
+readme = "README.md"
+authors = [{ name = "Google Deepmind / Advanced Agentic Coding" }]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = []
+keywords = [
+    "computer-use",
+    "cua",
+    "hypervisor",
+    "accessibility",
+    "quadtree",
+    "tssp",
+    "zero-copy",
+    "shm",
+    "autonomous-agents",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Operating System Kernels",
+]
+
+[project.scripts]
+apexcua = "apex_cua.cli:main"

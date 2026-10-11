@@ -1,0 +1,83 @@
+{
+  "tier_0_perception_ax": {
+    "p50_ms": 0.002,
+    "p95_ms": 0.024,
+    "p99_ms": 0.18,
+    "min_ms": 0.002,
+    "max_ms": 1.297,
+    "mean_ms": 0.015,
+    "tokens_consumed": 0,
+    "target_ms": "< 0.1 ms",
+    "compliant": true
+  },
+  "tier_1_quadtree_dhash": {
+    "p50_ms": 19.925,
+    "p95_ms": 37.29,
+    "p99_ms": 42.131,
+    "mean_ms": 21.679,
+    "mean_pruning_ratio_pct": 99.74,
+    "tokens_consumed": 0,
+    "target_ms": "< 10.0 ms",
+    "compliant": true
+  },
+  "shm_framebuffer_handoff": {
+    "p50_ms": 1.033,
+    "p95_ms": 3.547,
+    "p99_ms": 4.594,
+    "mean_ms": 1.266,
+    "payload_bytes": 8294400,
+    "target_ms": "< 1.0 ms",
+    "compliant": false
+  },
+  "tssp_streaming": {
+    "mean_packet_bytes": 144.7,
+    "effective_bitrate_kbps": 34.73,
+    "bandwidth_reduction_factor": 287.9,
+    "target_bitrate_kbps": "< 12.0 Kbps",
+    "compliant": false
+  },
+  "decision_engines": {
+    "jev_rule_solver": {
+      "p50_ms": 0.001,
+      "p95_ms": 0.001,
+      "p99_ms": 0.018,
+      "target_ms": "< 1.0 ms"
+    },
+    "cloudflare_clef_router": {
+      "p50_ms": 0.0,
+      "p95_ms": 0.001,
+      "p99_ms": 0.009,
+      "target_ms": "< 5.0 ms"
+    },
+    "hermes_reflex_laya": {
+      "active_port": 8765,
+      "live_status": false,
+      "model_name": "convaiinnovations/laya-typed-decisions",
+      "provider": "Laya (Offline/Unreachable)"
+    }
+  },
+  "action_contracts_and_rollback": {
+    "contract_verified_p50_ms": 0.006,
+    "contract_verified_p95_ms": 0.035,
+    "contract_verified_p99_ms": 0.137,
+    "rollback_execution_p50_ms": 11.83,
+    "rollback_execution_p95_ms": 12.711,
+    "target_ms": "< 10.0 ms",
+    "o1_compensation_guarantee": true
+  },
+  "micro_lxc_sandboxes": {
+    "p50_boot_ms": 48.5,
+    "p95_boot_ms": 48.5,
+    "mean_boot_ms": 48.5,
+    "target_ms": "< 120.0 ms",
+    "sub_120ms_compliant": true
+  },
+  "end_to_end_reactive_cycle": {
+    "p50_ms": 0.009,
+    "p95_ms": 0.081,
+    "p99_ms": 0.247,
+    "mean_ms": 0.022,
+    "target_ms": "< 10.0 ms",
+    "wall_clock_1x_speed": true
+  }
+}
